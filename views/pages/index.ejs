@@ -3,16 +3,17 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="stylesheets/main.css"/>
+  <script> var apiKey = '<%= process.env.API_KEY %>';</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="/js/main.js"></script>
+
 </head>
 
 <body>
 
   <h1>Hi Hannah</h1>
 
-  <p id="demo">
-    This is me testing out a lil html file
-  </p>
+  <div class="city"></div><div class="temp"></div>
 
   <button type="button" onclick="myFunction()">
     Try it
